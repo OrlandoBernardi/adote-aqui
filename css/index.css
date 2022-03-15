@@ -13,9 +13,15 @@ header{
     font-family: 'Smooch', cursive;
     font-size: 40px;
     margin-left: 50px;
+    width: 80%;
     list-style: url("https://img.icons8.com/material-rounded/24/000000/dog.png");
 }
+.logo:hover{
+    font-size: 50px;
+    color:aqua ;
+    transition: 2s;
 
+}
 .p1{ 
     
     display: flex;
@@ -51,7 +57,7 @@ body{
 }
 section{
     display: flex;
-    justify-content: row;
+    flex-direction:  row;
     align-items: center;
     width: 100%;
     justify-content: space-between;
@@ -108,4 +114,37 @@ footer{
     margin-top: 12%;
     height: 60px;
     color: grey;
+}
+
+@media (max-width: 700px)
+{
+    header{
+        width: 100%;
+    }
+.logo{
+    display: none;
+}
+.p1 {
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    margin-left: 40%;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 50%;
+    border-radius: 10px;
+    text-decoration: none;
+}
+body{
+    width: 700px;
+    background-color: white;
+}
+
+
 }
